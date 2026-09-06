@@ -4,8 +4,75 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f2d2bb175ffe409da49e7034d1f3a93",
+    "content-hash": "625a5f114c57e5345b83946483ce881a",
     "packages": [
+        {
+            "name": "darkwood/flow",
+            "version": "v8.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/darkwood-com/flow.git",
+                "reference": "f3102a75850040da4cba89b09b01af96cb912c1c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/darkwood-com/flow/zipball/f3102a75850040da4cba89b09b01af96cb912c1c",
+                "reference": "f3102a75850040da4cba89b09b01af96cb912c1c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.5",
+                "symfony/config": "^8.1",
+                "symfony/dependency-injection": "^8.1",
+                "symfony/event-dispatcher": "^8.1",
+                "symfony/http-kernel": "^8.1",
+                "symfony/string": "^8.1"
+            },
+            "require-dev": {
+                "amphp/amp": "^3.1",
+                "doctrine/dbal": "^4.3",
+                "openswoole/ide-helper": "^26.2.0",
+                "react/async": "^4.3",
+                "spatie/async": "^1.8",
+                "symfony/doctrine-messenger": "^8.1",
+                "symfony/http-client": "^8.1"
+            },
+            "suggest": {
+                "amphp/amp": "Provide asynchronous with AMP",
+                "ext-async": "Provides the experimental TrueAsync driver for Flow",
+                "ext-openswoole": "Provide asynchronous with OpenSwoole",
+                "react/async": "Provide asynchronous with ReactPHP",
+                "spatie/async": "Provide asynchronous with Spatie",
+                "symfony/messenger": "Provide Symfony Messenger support"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Flow\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Flow",
+            "keywords": [
+                "amphp",
+                "async",
+                "fiber",
+                "monad",
+                "php",
+                "reactphp",
+                "spatie",
+                "swoole",
+                "symfony"
+            ],
+            "support": {
+                "issues": "https://github.com/darkwood-com/flow/issues",
+                "source": "https://github.com/darkwood-com/flow/tree/v8.1.6"
+            },
+            "time": "2026-09-01T15:19:05+00:00"
+        },
         {
             "name": "psr/cache",
             "version": "3.0.0",
@@ -2590,19 +2657,73 @@
                 }
             ],
             "time": "2026-08-30T01:03:44+00:00"
+        },
+        {
+            "name": "yethee/tiktoken",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yethee/tiktoken-php.git",
+                "reference": "e7ab1881470e4d4f10c27f2d451fb29732e9e3fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yethee/tiktoken-php/zipball/e7ab1881470e4d4f10c27f2d451fb29732e9e3fa",
+                "reference": "e7ab1881470e4d4f10c27f2d451fb29732e9e3fa",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "symfony/service-contracts": "^2.5 || ^3.0"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^13",
+                "mikey179/vfsstream": "^1.6.11",
+                "phpbench/phpbench": "^1.2",
+                "phpunit/phpunit": "^10.5.45",
+                "psalm/plugin-phpunit": "^0.19.2",
+                "vimeo/psalm": "6.15.1"
+            },
+            "suggest": {
+                "ext-ffi": "To allow use LibEncoder"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yethee\\Tiktoken\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP version of tiktoken",
+            "keywords": [
+                "bpe",
+                "decode",
+                "encode",
+                "openai",
+                "tiktoken",
+                "tokenizer"
+            ],
+            "support": {
+                "issues": "https://github.com/yethee/tiktoken-php/issues",
+                "source": "https://github.com/yethee/tiktoken-php/tree/1.1.1"
+            },
+            "time": "2026-03-10T19:45:30+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=8.4",
+        "php": ">=8.5",
         "ext-ctype": "*",
         "ext-iconv": "*"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }

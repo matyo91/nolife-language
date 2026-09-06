@@ -4,17 +4,17 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": ">=8.4",
+        "php": ">=8.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "darkwood/flow": "^8.1",
         "symfony/console": "8.1.*",
         "symfony/dotenv": "8.1.*",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "8.1.*",
         "symfony/runtime": "8.1.*",
-        "symfony/yaml": "8.1.*"
-    },
-    "require-dev": {
+        "symfony/yaml": "8.1.*",
+        "yethee/tiktoken": "^1.1"
     },
     "config": {
         "allow-plugins": {
